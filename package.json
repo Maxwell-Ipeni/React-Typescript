@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "build": "npm --prefix ./React-Typescript run build"
+    "dev": "npm --prefix ./React-Typescript run dev",
+    "build": "npm --prefix ./React-Typescript run build",
+    "lint": "npm --prefix ./React-Typescript run lint",
+    "preview": "npm --prefix ./React-Typescript run preview"
   },
   "devDependencies": {
     "@types/react": "^19.2.2",
