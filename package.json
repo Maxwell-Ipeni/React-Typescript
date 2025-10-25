@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "npm --prefix ./React-Typescript run build"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "typescript": "^5.9.3"
+  }
+}

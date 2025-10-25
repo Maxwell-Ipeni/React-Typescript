@@ -1,0 +1,18 @@
+{
+  "files.associations": {
+    "*.tsx": "typescriptreact",
+    "*.ts": "typescript"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": [
+    { "mode": "auto" },
+    { "directory": "C:/Projects/react-typescript/React-Typescript", "changeProcessCWD": true }
+  ],
+  "typescript.tsdk": "./React-Typescript/node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}

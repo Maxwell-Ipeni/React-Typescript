@@ -1,0 +1,15 @@
+/* Minimal styles for the App component */
+.logo {
+  height: 3rem;
+}
+
+.card {
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+}
+
+.read-the-docs {
+  color: #666;
+}
