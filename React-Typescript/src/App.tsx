@@ -125,7 +125,7 @@ export default function App() {
       <section style={{ marginTop: 16, display: 'grid', gap: 16 }}>
         {showForm && (
           <div>
-            <h3>{editing ? 'Edit user' : 'Create user'}</h3>
+            <h3>{editing ? 'Edit user(GET)' : 'Create user(POST)'}</h3>
             <UserForm
               initial={editing || {}}
               onSave={(data) => {
