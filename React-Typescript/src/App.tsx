@@ -42,6 +42,7 @@ export default function App() {
           age?: number
         }
 
+        // extracting users array from the parsed JSON response and casting to an array of RemoteUser objects:
         const remote = (json.users || []) as RemoteUser[]
 
         // Convert the remote shape to our local shape. Provide sensible defaults.
