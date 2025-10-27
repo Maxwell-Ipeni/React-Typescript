@@ -1,3 +1,5 @@
+// Define the shape of a User object used in the application with required fields (id, username, email) 
+// and optional fields (state, country, age).
 export interface User {
   id: string
   username: string

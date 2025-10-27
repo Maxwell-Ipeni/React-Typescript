@@ -1,16 +1,12 @@
 /*
   UserList.tsx
-  - Presentational component that renders a list of users in a table.
-  - Props (runtime):
-    * users: array of user objects
-    * onEdit: callback when Edit is clicked (receives user)
-    * onDelete: callback when Delete is clicked (receives id)
+  The component renders a table of users with basic edit/delete actions, safely defaulting to no-op handlers if none are provided—preventing 
+  runtime errors and supporting flexible parent integration.
 */
 
 
 
 // @ts-nocheck
-// Runtime-only UserList component (no TypeScript-only syntax to avoid editor false-positives)
 // Props: { users, onEdit, onDelete }
 export default function UserList(props) {
   const { users, onEdit, onDelete } = props || {}

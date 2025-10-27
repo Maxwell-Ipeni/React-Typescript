@@ -1,20 +1,13 @@
 import { User } from '../types'
 
-/*
-  dummyApi.ts
-  - A very small local JSON-like API backed by localStorage for demo purposes.
-  - Implements: getAll, getById, create, update, remove.
-  - Methods simulate latency with a small timeout to mimic network delays.
-*/
-
 const STORAGE_KEY = 'dummy_users_v1'
 
-// Create a compact unique id for demo records.
+// A compact unique id for demo records.
 function makeId() {
   return Date.now().toString(36) + Math.random().toString(36).slice(2, 8)
 }
 
-// Read persisted users from localStorage. Returns [] on error.
+// This code reads persisted users from localStorage. Returns [] on error.
 function read(): User[] {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
@@ -29,7 +22,8 @@ function write(users: User[]) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(users))
 }
 
-// If no users are present, seed with a couple of example records.
+// This function checks if user data exists in storage; if not, it seeds the storage with sample users and returns 
+// them—ensuring the app always starts with valid data
 function ensureSeed() {
   const users = read()
   if (users.length === 0) {

@@ -1,3 +1,6 @@
+// This code bootstraps a React application by rendering the App component inside the DOM element with id root, 
+// wrapped in <StrictMode> to highlight potential problems 
+// and enforce best practices during development.
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'

@@ -6,13 +6,11 @@ import { User } from './types'
 import './App.css'
 
 /*
-  App.tsx — demo CRUD app
+  App.tsx — demo learning app
 
   Purpose:
-  - Load user data from an external JSON API (https://dummyjson.com/users) on first render.
-  - Map remote user objects into the app's `User` shape.
-  - Seed localStorage so the local `dummyApi` can be used for offline/persistent CRUD operations.
-  - Provide UI handlers for Create / Update / Delete and wire them to the `UserForm` and `UserList` components.
+ - This App component fetches user data from a remote JSON API on mount, falls back to local storage if the network fails, and enables full CRUD operations 
+ (create, read, update, delete) using a mock API with React state and useEffect.
 */
 
 export default function App() {

@@ -3,12 +3,8 @@ import { User } from '../types'
 
 /*
   UserForm.tsx
-  - Reusable form component used for both creating and editing users.
-  - Props:
-    * initial: optional initial field values (used when editing)
-    * onSave: called with the form payload when the form is submitted
-    * onCancel: called when the user cancels the form
-  - Uses local component state for each input so the form is fully controlled.
+  This component renders a reusable user form that supports both creation and editing by accepting initial values and 
+  callbacks for save/cancel actions, with state synced to form inputs.
 */
 
 /**
