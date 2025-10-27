@@ -45,6 +45,7 @@ export default function App() {
         const remote = (json.users || []) as RemoteUser[]
 
         // Convert the remote shape to our local shape. Provide sensible defaults.
+
         const mapped: User[] = remote.map((u) => ({
           id: String(u.id ?? makeId()),
           username: u.username || `${u.firstName || ''} ${u.lastName || ''}`.trim() || 'user',

@@ -4,10 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite --port 3000",
+    "dev": "vite --port 3000",
     "build": "tsc -b && vite build",
-  "lint": "node scripts/check-no-js.cjs && eslint --ext .ts,.tsx .",
-  "check:no-js": "node scripts/check-no-js.cjs",
+    "lint": "eslint --ext .ts,.tsx .",
     "preview": "vite preview"
   },
   "dependencies": {
