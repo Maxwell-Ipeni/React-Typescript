@@ -7,7 +7,5 @@
     "*.tsx": "typescriptreact"
   },
   "eslint.validate": ["typescript", "typescriptreact"],
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
-  }
+  
 }
