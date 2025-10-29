@@ -38,7 +38,7 @@ function ensureSeed() {
 }
 
 // Small promise-based delay used to simulate network latency in the demo.
-const delay = (ms = 200) => new Promise((r) => setTimeout(r, ms))
+const delay = (ms = 5000000) => new Promise((r) => setTimeout(r, ms))
 
 const dummyApi = {
   // Return all users (newest first). Ensures seed data.

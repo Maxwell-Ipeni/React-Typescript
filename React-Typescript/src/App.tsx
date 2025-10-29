@@ -16,7 +16,8 @@ import './App.css'
 export default function App() {
   // Generates a short unique id used when upstream data doesn't have a stable id.
   function makeId() {
-    return Date.now().toString(36) + Math.random().toString(36).slice(2, 8)
+    return Date.now().toString()   +   Math.random().toString().slice(2, 8)
+    // Example: "lfl4p6x9k2" + "555"
   }
   const [users, setUsers] = useState<User[]>([])
   const [loading, setLoading] = useState(false)
@@ -40,10 +41,12 @@ export default function App() {
           email?: string
           address?: { state?: string; city?: string; country?: string }
           age?: number
+          another?: number
         }
 
         // extracting users array from the parsed JSON response and casting to an array of RemoteUser objects:
         const remote = (json.users || []) as RemoteUser[]
+        console.log('Fetched remote users:',)
 
         // Convert the remote shape to our local shape. Provide sensible defaults.
 
