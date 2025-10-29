@@ -118,7 +118,7 @@ export default function App() {
   return (
     <div style={{ maxWidth: 900, margin: '24px auto', padding: 12 }}>
       <header style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
-        <h1>Demo Showing Use of synchronous commands(PUT,GET,POST,DELETE) <br />
+        <h1 className='code'>Demo Showing Use of synchronous commands(PUT,GET,POST,DELETE) <br />
           to Fetch data from a json api <br/> using useEffect & useState hooks</h1>
           
       </header>
