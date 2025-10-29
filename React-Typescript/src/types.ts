@@ -6,7 +6,7 @@ export interface User {
   email: string
   state?: string
   country?: string
-  age?: number
+  age: number
   // this allows extra fields if needed
   [key: string]: unknown
 }

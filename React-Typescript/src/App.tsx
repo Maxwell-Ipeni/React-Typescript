@@ -40,7 +40,7 @@ export default function App() {
           lastName?: string
           email?: string
           address?: { state?: string; city?: string; country?: string }
-          age?: number
+          age: number
           another?: number
         }
 
