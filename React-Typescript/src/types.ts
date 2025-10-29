@@ -1,5 +1,5 @@
-// Define the shape of a User object used in the application with required fields (id, username, email) 
-// and optional fields (state, country, age).
+// This code defines the shape of a User object used in the application with 
+// required fields (id, username, email) and optional fields (state, country, age).
 export interface User {
   id: string
   username: string
@@ -7,6 +7,6 @@ export interface User {
   state?: string
   country?: string
   age?: number
-  // allow extra fields if needed
+  // this allows extra fields if needed
   [key: string]: unknown
 }
